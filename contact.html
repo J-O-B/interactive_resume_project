@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rosie</title>
+    <title>J-O-B | Full Stack Dev</title>
+    
+    <!--EmailJS Script-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_qzVjfCSbvhEce7QuYTh1Y");
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -23,7 +31,7 @@
             <div class="col-md-8">
                 <div class="row no-gutters bg-color-name-title">
                     <div class="col heading">
-                        <h1 class="name">Rosie Odenkirk</h1>
+                        <h1 class="name">John O'Brien</h1>
                         <h2 class="title"> Full Stack Developer</h2>
                     </div>
                 </div>
@@ -61,18 +69,14 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
                         <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Project description" required></textarea>
-                        <div class="form-row text-center">
-                            <div class="col">
-                                <button type="submit" class="btn btn-secondary">Send Project Request</button>
-                            </div>
-                        </div>
+                        <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+
                     </form>
                 </div>
-
             </div>
         </div>
 
@@ -138,6 +142,7 @@
             </div>
         </div>
     </footer>
-        <script src="assets/js/home.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
+    <script src="assets/js/home.js"></script>
 </body>
 </html>
