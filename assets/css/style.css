@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+/*--------------------------------------------Hidden or Show*/
+.hidden{
+    display:none;
+}
 
 /*--------------------------------------------Colors*/
 
@@ -209,7 +213,10 @@ footer {
     background-color: #525252;
     color: #fafafa;
     min-height: 120px;
-    margin: 0;
+    margin-top: 100px;
+    position:fixed;
+    bottom:0px;
+    left:0px;
 }
 
 footer .cv-pdf i {
@@ -260,10 +267,29 @@ footer .cv-pdf i:hover {
 .three-reasons-icon {
     font-size: 26px;
     color: #e67e22;
+    margin-top:50px;
+}
+.col-2{
+    text-align:right;
 }
 
 .three-reasons-heading {
     margin-bottom: 15px;
+}
+
+.mid-section{
+    padding-bottom:130px;
+}
+
+.space-top{
+    margin-top:50px;
+    box-shadow: 0 5px 20px rgba(25, 25, 25, 0.2);
+    height:275px;
+}
+.content{
+    text-align: justify;
+    width:90%;
+    font-weight: 300;
 }
 
 /*--------------------------------------------Personal Info*/
@@ -401,6 +427,12 @@ div#map {
     min-height: 360px;
 }
 
+/*--------------------------------------------GitHub*/
+#loader img{
+    height:200px;
+    width:auto;
+    margin:0 auto;
+}
 /*--------------------------------------------Media Queries*/
 
 @media(min-width: 992px) {
